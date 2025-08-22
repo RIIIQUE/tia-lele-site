@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIA LELE - Transporte Escolar em Arujá | Segurança e Carinho</title>
+    <title>TIA LELE - Transporte Escolar em Guarulhos | Segurança e Carinho</title>
+    <meta name="description" content="Transporte escolar seguro e confiável em Guarulhos. A Tia Lele oferece serviços de van escolar com foco na segurança, pontualidade e carinho com as crianças. Horários manhã, tarde e integral.">
+    <meta name="keywords" content="transporte escolar, van escolar, Guarulhos, Jardim Jacy, segurança infantil, pontualidade, Tia Lele">
+    <meta name="author" content="TIA LELE Transporte Escolar">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TIA LELE - Transporte Escolar Seguro em Guarulhos">
+    <meta property="og:description" content="Transporte escolar com segurança, pontualidade e muito carinho. Atendemos Guarulhos e região.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚐</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #64748b;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #1f2937;
+            box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin: 0;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav a:hover {
+            color: #f59e0b;
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f59e0b;
+            transition: width 0.3s ease;
+        }
+
+        .nav a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #374151;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fde68a 100%);
+            padding: 140px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="hero-pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse"><circle cx="30" cy="30" r="2" fill="%23f59e0b" opacity="0.15"/></pattern></defs><rect width="100%25" height="100%25" fill="url(%23hero-pattern)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #374151;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            background: linear-gradient(135deg, #fef3c7, #fbbf24);
+            border-radius: 20px;
+            margin: 3rem auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            box-shadow: 0 20px 40px rgba(251, 191, 36, 0.3);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #1f2937, #374151);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(31, 41, 55, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #374151, #4b5563);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(31, 41, 55, 0.5);
+        }
+
+        .cta-button svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: #fbbf24;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, #1f2937, #374151);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #fbbf24;
+            box-shadow: 0 8px 25px rgba(31, 41, 55, 0.3);
+        }
+
+        .feature-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-photo {
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(135deg, #fef3c7, #fbbf24);
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #1f2937;
+            box-shadow: 0 20px 40px rgba(251, 191, 36, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-photo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('public/tia-lele.png.PNG') center/cover;
+            opacity: 0.8;
+            border-radius: 50%;
+        }
+
+        .about-photo span {
+        }
+
+        .about-text h2 {
+            margin-bottom: 2rem;
+            color: #1f2937;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: white;
+            position: relative;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 3rem 2.5rem;
+            border-radius: 24px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b, #d97706);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: #fbbf24;
+        }
+
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            text-align: center;
+        }
+
+        .service-card h3 {
+            color: #1f2937;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .service-card h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            border-radius: 2px;
+        }
+
+        .service-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .service-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #475569;
+        }
+
+        .service-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #f59e0b;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .service-highlight {
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 2px solid #fbbf24;
+            position: relative;
+        }
+
+        .service-highlight::before {
+            content: '⭐';
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: #fbbf24;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .service-highlight h4 {
+            color: #1f2937;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .service-highlight p {
+            color: #475569;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Regions Section */
+        .regions {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+        }
+
+        .regions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .region-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .region-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .region-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .region-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        /* Events Section */
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            margin-top: 3rem;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h4 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-info p {
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .maps-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 1rem 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+        }
+
+        .maps-button:hover {
+            background: linear-gradient(135deg, #b91c1c, #991b1b);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(220, 38, 38, 0.5);
+        }
+
+        .maps-button svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #25d366, #20c55a);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 1rem 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-button:hover {
+            background: linear-gradient(135deg, #20c55a, #16a34a);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-button svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+
+        .footer p:first-child {
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 16px 16px;
+            }
+
+            .nav.active {
+                display: flex;
+            }
+
+            .nav a {
+                padding: 1rem 0;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .nav a:last-child {
+                border-bottom: none;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .about-photo {
+                width: 220px;
+                height: 220px;
+                font-size: 3rem;
+            }
+
+            .features-grid,
+            .services-grid,
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .regions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .events-showcase {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card,
+            .service-card,
+            .event-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .cta-button,
+            .whatsapp-button {
+                padding: 15px 30px;
+                font-size: 1rem;
+            }
+
+            .hero-image {
+                height: 200px;
+                font-size: 3rem;
+            }
+
+            .about-photo {
+                width: 180px;
+                height: 180px;
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus states for accessibility */
+        .cta-button:focus,
+        .whatsapp-button:focus,
+        .maps-button:focus,
+        .nav a:focus {
+            outline: 2px solid #fbbf24;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🚐</div>
+                    <h1>TIA LELE</h1>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#regioes">Regiões</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in-up">Transporte Escolar com Segurança e Carinho</h1>
+                <p class="fade-in-up">A Tia Lele oferece o melhor serviço de transporte escolar em Arujá, priorizando a segurança, pontualidade e o bem-estar das crianças.</p>
+                
+                <div class="hero-image fade-in-up">
+                    🚐
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Por que escolher a Tia Lele?</h2>
+            <p class="section-subtitle">Nossa prioridade é a segurança e o bem-estar das crianças, com atendimento personalizado e carinhoso em Guarulhos.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                            <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.5 16,12.4 16,13V16C16,16.6 15.6,17 15,17H9C8.4,17 8,16.6 8,16V13C8,12.4 8.4,11.5 9,11.5V10C9,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.2,8.7 10.2,10V11.5H13.8V10C13.8,8.7 12.8,8.2 12,8.2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Segurança Total</h3>
+                    <p>Veículo regularizado, cinto de segurança para todos, motorista habilitada e experiência comprovada no transporte de crianças.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                            <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                        </svg>
+                    </div>
+                    <h3>Pontualidade</h3>
+                    <p>Horários rigorosamente cumpridos para que seu filho nunca chegue atrasado na escola ou em casa.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                            <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                        </svg>
+                    </div>
+                    <h3>Carinho e Atenção</h3>
+                    <p>Tratamento carinhoso e atencioso com cada criança, criando um ambiente acolhedor e seguro durante o trajeto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-photo">
+                        <span>👩‍🦳</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>Conheça a Tia Lele</h2>
+                    <p>
+                        Com mais de 10 anos de experiência no transporte escolar, a Tia Lele é conhecida por sua dedicação, responsabilidade e carinho especial com as crianças em Guarulhos.
+                    </p>
+                    <p>
+                        Habilitada e capacitada para o transporte escolar, oferece um serviço personalizado, tratando cada criança com o cuidado que ela merece, como se fosse da própria família.
+                    </p>
+                    <p>
+                        <strong>Nossa missão:</strong> Proporcionar tranquilidade aos pais e segurança às crianças, fazendo de cada viagem uma experiência positiva e segura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-subtitle">Oferecemos diferentes modalidades de transporte para atender às necessidades de cada família.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌅</div>
+                    <h3>Período Manhã</h3>
+                    <ul class="service-list">
+                        <li>Saída de casa: 6h30 às 7h30</li>
+                        <li>Retorno da escola: 11h30 às 12h30</li>
+                        <li>Acompanhamento porta a porta</li>
+                        <li>Comunicação constante com os pais</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌇</div>
+                    <h3>Período Tarde</h3>
+                    <ul class="service-list">
+                        <li>Saída de casa: 12h30 às 13h30</li>
+                        <li>Retorno da escola: 17h30 às 18h30</li>
+                        <li>Supervisão durante todo o trajeto</li>
+                        <li>Atividades educativas no trajeto</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌞</div>
+                    <h3>Período Integral</h3>
+                    <ul class="service-list">
+                        <li>Cobertura manhã e tarde</li>
+                        <li>Desconto especial para período integral</li>
+                        <li>Flexibilidade de horários</li>
+                        <li>Atendimento personalizado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions Section -->
+    <section id="regioes" class="regions">
+        <div class="container">
+            <h2 class="section-title">Regiões Atendidas</h2>
+            <p class="section-subtitle">Atendemos Guarulhos e bairros próximos com rotas otimizadas para maior comodidade.</p>
+            
+            <div class="regions-grid">
+                <div class="region-card">
+                    <div class="region-icon">🏘️</div>
+                    <h3>Jardim Jacy</h3>
+                    <p>Atendimento completo na região do Jardim Jacy e bairros adjacentes.</p>
+                </div>
+                
+                <div class="region-card">
+                    <div class="region-icon">🌳</div>
+                    <h3>Bairros Residenciais</h3>
+                    <p>Centro de Guarulhos, Vila Galvão, Macedo e outros bairros próximos.</p>
+                </div>
+                
+                <div class="region-card">
+                    <div class="region-icon">🗺️</div>
+                    <h3>Consulte sua Região</h3>
+                    <p>Entre em contato para verificar se atendemos sua localidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p>
+                    Pronta para oferecer o melhor transporte escolar para seu filho em Guarulhos. Entre em contato pelo WhatsApp!
+                </p>
+                <p style="font-size: 1rem; margin-bottom: 2rem;">
+                    📞 Atendimento de segunda a sexta, das 6h às 19h<br>
+                    📱 Resposta rápida pelo WhatsApp<br>
+                    🚐 Transporte escolar seguro e confiável
+                </p>
+                
+                <a href="https://wa.me/5511962297556?text=Olá%20Tia%20Lele!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20transporte%20escolar.%20Poderia%20me%20enviar%20mais%20informações%20sobre%20valores%20e%20horários?" class="whatsapp-button" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    Solicite um Orçamento
+                </a>
+                
+                <a href="https://share.google/bcz5ipGuueBti2w95" class="maps-button" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    Ver no Google Maps
+                </a>
+                
+                <div class="contact-info">
+                    <h4>Informações para contato:</h4>
+                    <p>📍 R. Nova Olímpia, 620 - Jardim Jacy, Guarulhos - SP, 07262-020</p>
+                    <p>🕐 Segunda a Sexta: 6h às 19h</p>
+                    <p>📱 WhatsApp: (11) 96229-7556</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TIA LELE - Transporte Escolar. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+                Transporte escolar seguro e confiável em Guarulhos | CNH válida | Veículo regularizado
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('nav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenuBtn.textContent = nav.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        nav.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                nav.classList.remove('active');
+                mobileMenuBtn.textContent = '☰';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Simple animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.feature-card, .service-card, .event-card, .region-card, .event-showcase-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add loading state to buttons
+        document.querySelectorAll('.cta-button, .whatsapp-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const originalOpacity = this.style.opacity;
+                this.style.opacity = '0.8';
+                setTimeout(() => {
+                    this.style.opacity = originalOpacity || '1';
+                }, 200);
+            });
+        });
+
+        // Keyboard navigation support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                mobileMenuBtn.textContent = '☰';
+            }
+        });
+    </script>
+</body>
+</html>
